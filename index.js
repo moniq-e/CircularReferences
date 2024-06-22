@@ -68,6 +68,5 @@ function check(cell) {
 			}
 		}
 	}
-	console.log(flow)
 	if (flow[connections].length && flow[connections].reduce((p, c) => p.concat(c)).includes(cells.indexOf(cell))) return true
 }
